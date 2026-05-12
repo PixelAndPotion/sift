@@ -20,7 +20,7 @@ Built to mirror the kind of risk monitoring infrastructure used in Corporate & I
 ## What It Does
 
 - **Simulates** a live feed of institutional financial transactions (wire transfers, FX, equity trades, derivatives)
-- **Detects** anomalous transactions using Isolation Forest — an unsupervised ML algorithm that requires no labelled training data
+- **Detects** anomalous transactions using Isolation Forest, an unsupervised ML algorithm that requires no labelled training data
 - **Scores** every transaction on a four-tier risk scale: 🟢 Low / 🟡 Medium / 🟠 High / 🔴 Critical
 - **Visualises** risk in real time — scatter plots, donut charts, hourly anomaly heatmaps
 - **Alerts** on Critical and High risk transactions in a live feed panel
@@ -57,7 +57,7 @@ No labelled training data is required. The model learns what "normal" looks like
 ## Project Structue
 ```
 sift/
-├── app.py                 # Main Streamlit dashboard — run this
+├── app.py                 # Main Streamlit dashboard (run)
 ├── transaction_gen.py     # Simulates live institutional transaction feed
 ├── anomaly_detector.py    # Isolation Forest ML model + risk scoring
 ├── report_gen.py          # PDF audit report generator
